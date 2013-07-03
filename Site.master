@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>STUDENT TRACKER Home Page</title>
+     <link rel="stylesheet" type="text/css" href="style/StyleSheet.css" />
+    <script src="JS/sdmenu.js" type="text/javascript" language="javascript"></script>
+    <script type="text/javascript">
+	// <![CDATA[
+	var myMenu;
+	window.onload = function() {
+		myMenu = new SDMenu("my_menu");
+		myMenu.init();
+		
+	};
+	// ]]>
+	</script>
+</head>
+<body>
+     <form id="form1" runat="server" >
+   
+  
+             <table width="99%" cellpadding="2" cellspacing="2" style="height: 58px">              
+                    <tr valign="top">
+                        <td align="left" >
+                            <img alt="Media Sys Logo" src="Images/tracker.gif" 
+                                style="width: 284px; height: 129px;" />
+                            
+                        </td>
+                        <td align="right"><asp:ImageButton ID="ImageButton1" runat="server" Height="41px" 
+                                ImageAlign="Top" ImageUrl="~/Images/logout.jpg" onclick="ImageButton1_Click" 
+                                Width="56px" />
+                            <br />
+                            <br />
+                        </td>
+                     </tr>
+                     
+                    <tr>
+                        <td class="backgroundnoalign"  colspan="2" align="right" >                            
+                            
+                                <asp:Label ID="lblLoggedInUser" runat="server" ForeColor="White" 
+                                    Text="Logged In User : " Font-Bold="True" Font-Names="Calibri"></asp:Label>
+                                               
+                        </td>
+                      
+                    </tr>
+                    </table>
+                    <table  width="99%" height="100%" cellpadding="2" cellspacing="2">       
+                    <tr>
+                        <td align="left" valign="top" style="width:1%">
+                             
+                             <div style="float: left" id="my_menu" class="sdmenu">
+                                     
+                                      
+                                     
+                                   
+                                    </div>
+
+                         </td>
+                          <td  align="left" valign="top" >
+                             
+                             
+                                <asp:contentplaceholder id="MainContent" runat="server">
+                              
+                                </asp:contentplaceholder>
+                             
+                             
+                              
+                             
+                                 
+                             
+                               
+                         </td>
+                           
+                    </tr>
+                </table>             
+     
+        
+ 
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿ .main
+        {
+            font-family:Trebuchet MS;
+            text-align:justify;
+            position:relative;
+            
+           /* background-image:url('I:\1-SFIT\PROJ\StudentTracker\Images\background2.gif');*/
+          
+        }
+    
+      
+                  
+    .curvedEdges 
+    { 
+    	border:2px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px;
+     }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+
+
+        
+        .watermark
+        {
+        	color:Silver;
+        }
+       
+       /* table tr 
+        {
+            padding:12px;
+            color:gray;
+            }
+            
+        table td 
+            {
+                size:auto;
+            }
+            
+        Button
+        {
+            background-color:Blue;
+        }*/
+       /* .style3
+        {
+            width: 150px;
+        }
+        .style4
+        {
+            width: 145px;
+        }
+        .style5
+        {
+            width: 63px;
+        }*/
+        .style2
+        {
+            width: 101px;
+        }
+        .style3
+        {
+            width: 112px;
+        }
+        .style4
+        {
+        }
